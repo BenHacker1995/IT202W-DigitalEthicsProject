@@ -1,15 +1,26 @@
 import React from 'react';
+import {
+  HashRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Team Singularity</h1>
+const App = () => (
+  <div className="bg">
+    <Router>
+      <Switch>
+        <Redirect exact from="/" to="/home" />
 
-      </header>
-    </div>
-  );
-}
+
+        {/* OTHERWISE (no path!) */}
+        <Route render={() => <h1>404</h1>} />
+
+      </Switch>
+    </Router>
+  </div>
+);
 
 export default App;
