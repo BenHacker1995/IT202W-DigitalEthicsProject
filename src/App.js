@@ -7,6 +7,10 @@ import {
 } from 'react-router-dom';
 
 import Home from '../src/Components/Home/Home';
+import Overview from '../src/Components/Overview/Overview';
+import Economic from '../src/Components/Economics/Economics';
+import Safety from '../src/Components/Safety/Safety';
+
 
 import './App.css';
 
@@ -19,6 +23,21 @@ const App = () => (
         <Route
           path="/home"
           component={Home}
+        />
+
+        <Route
+          path="/overview"
+          component={Overview}
+        />
+
+        <Route
+          path="/economic"
+          component={Economic}
+        />
+
+        <Route
+          path="/safety"
+          component={Safety}
         />
 
         {/* OTHERWISE (no path!) */}

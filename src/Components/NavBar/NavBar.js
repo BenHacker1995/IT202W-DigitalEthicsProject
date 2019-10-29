@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import NavBarSection1 from './NavBarSection1';
-import NavBarSection2 from './NavBarSection2';
-import NavBarSection3 from './NavBarSection3';
 
 
 class NavBar extends Component {
@@ -11,9 +9,9 @@ class NavBar extends Component {
 
     return (
       <div>
-        <NavBarSection1/>
-        <NavBarSection2/>
-        <NavBarSection3/>
+        <NavBarSection1 overview={() => this.props.history.push('/overview')}
+            economic={() => this.props.history.push('/economic')}
+            safety={() => this.props.history.push('/safety')}/>
       </div>
     );
   }

@@ -32,6 +32,18 @@ class NavBarSection1 extends Component {
     this.setState({ open: false });
   };
 
+  overview = event => {
+    this.props.overview();
+  }
+
+  economic = event => {
+    this.props.economic();
+  }
+
+  safety = event => {
+    this.props.safety();
+  }
+
   render() {
     const { classes } = this.props;
     const { open } = this.state;
@@ -39,14 +51,24 @@ class NavBarSection1 extends Component {
     return (
       <div className={classes.root}>
           <Button
-            buttonRef={node => {
-              this.anchorEl = node;
-            }}
-            aria-owns={open ? 'menu-list-grow' : null}
-            aria-haspopup="true"
-            onClick={this.handleToggle}
+            // buttonRef={node => {
+            //   this.anchorEl = node;
+            // }}
+            // aria-owns={open ? 'menu-list-grow' : null}
+            // aria-haspopup="true"
+            onClick={this.overview}
           >
             Overview
+          </Button>
+          <Button
+            onClick={this.economic}
+          >
+            Economic Outlooks
+          </Button>
+          <Button
+            onClick={this.safety}
+          >
+            Safety
           </Button>
           {/* <Popper open={open} anchorEl={this.anchorEl} transition disablePortal>
             {({ TransitionProps, placement }) => (
