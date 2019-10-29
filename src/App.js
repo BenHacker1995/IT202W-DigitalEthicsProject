@@ -6,6 +6,8 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import Home from '../src/Components/Home/Home';
+
 import './App.css';
 
 const App = () => (
@@ -14,6 +16,10 @@ const App = () => (
       <Switch>
         <Redirect exact from="/" to="/home" />
 
+        <Route
+          path="/home"
+          component={Home}
+        />
 
         {/* OTHERWISE (no path!) */}
         <Route render={() => <h1>404</h1>} />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBarSection1 from './NavBarSection1';
-import NavBarSection2 from './NavBarSection2';
+// import NavBarSection1 from './NavBarSection1';
+// import NavBarSection2 from './NavBarSection2';
 
 
 class NavBar extends Component {

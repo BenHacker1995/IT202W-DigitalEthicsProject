@@ -6,7 +6,7 @@ class Header extends Component {
     return(
       <div className="instructions">
         <div>
-          <h1 className="lead">Dark Souls Attack Rating Calculator</h1>
+          <h1 className="lead">Team Singularity</h1>
           <NavBar history={this.props.history}/>
         </div>
       </div>
