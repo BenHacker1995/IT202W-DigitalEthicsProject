@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import NavBarSection1 from './NavBarSection1';
-// import NavBarSection2 from './NavBarSection2';
+import NavBarSection1 from './NavBarSection1';
+import NavBarSection2 from './NavBarSection2';
+import NavBarSection3 from './NavBarSection3';
 
 
 class NavBar extends Component {
@@ -10,9 +11,9 @@ class NavBar extends Component {
 
     return (
       <div>
-        {/* <NavBarSection1 ={() => this.props.history.push('/char/create')}
-            charList={() => this.props.history.push('/char/list')}/>
-        <NavBarSection2 melee={() => this.props.history.push('/weps')}/> */}
+        <NavBarSection1/>
+        <NavBarSection2/>
+        <NavBarSection3/>
       </div>
     );
   }
