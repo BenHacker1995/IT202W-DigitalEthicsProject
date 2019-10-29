@@ -32,14 +32,9 @@ class NavBarSection2 extends Component {
     this.setState({ open: false });
   };
 
-  goToMelee = event => {
-      this.props.melee();
-      this.handleClose();
-  }
-
   render() {
-    const { classes } = this.props;
-    const { open } = this.state;
+    // const { classes } = this.props;
+    // const { open } = this.state;
 
     return (
       <div className={classes.root}>
