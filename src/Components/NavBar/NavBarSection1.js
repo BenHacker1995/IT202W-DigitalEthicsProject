@@ -74,24 +74,6 @@ class NavBarSection1 extends Component {
           >
             Safety
           </Button>
-          {/* <Popper open={open} anchorEl={this.anchorEl} transition disablePortal>
-            {({ TransitionProps, placement }) => (
-              <Grow
-                {...TransitionProps}
-                id="menu-list-grow"
-                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-              >
-                <Paper>
-                  <ClickAwayListener onClickAway={this.handleClose}>
-                    <MenuList>
-                      <MenuItem onClick={this.createChar}>Create a Character</MenuItem>
-                      <MenuItem onClick={this.listChar}>Your Characters</MenuItem>
-                    </MenuList>
-                  </ClickAwayListener>
-                </Paper>
-              </Grow>
-            )}
-          </Popper> */}
         </div>
     );
   }
