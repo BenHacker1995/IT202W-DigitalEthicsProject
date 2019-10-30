@@ -11,7 +11,8 @@ class NavBar extends Component {
       <div>
         <NavBarSection1 overview={() => this.props.history.push('/overview')}
             economic={() => this.props.history.push('/economic')}
-            safety={() => this.props.history.push('/safety')}/>
+            safety={() => this.props.history.push('/safety')}
+            home={() => this.props.history.push('/home')}/>
       </div>
     );
   }

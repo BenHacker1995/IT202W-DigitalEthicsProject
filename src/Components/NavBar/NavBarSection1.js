@@ -32,17 +32,21 @@ class NavBarSection1 extends Component {
     this.setState({ open: false });
   };
 
+  home = event => {
+    this.props.home();
+  };
+
   overview = event => {
     this.props.overview();
-  }
+  };
 
   economic = event => {
     this.props.economic();
-  }
+  };
 
   safety = event => {
     this.props.safety();
-  }
+  };
 
   render() {
     const { classes } = this.props;
@@ -51,11 +55,11 @@ class NavBarSection1 extends Component {
     return (
       <div className={classes.root}>
           <Button
-            // buttonRef={node => {
-            //   this.anchorEl = node;
-            // }}
-            // aria-owns={open ? 'menu-list-grow' : null}
-            // aria-haspopup="true"
+            onClick={this.home}
+          >
+            Home
+          </Button>
+          <Button
             onClick={this.overview}
           >
             Overview
