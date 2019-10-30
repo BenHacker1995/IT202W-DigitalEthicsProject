@@ -22,10 +22,16 @@ body {
 
 .instructions {
     background-color: #00acb0;
-    background-position-x: center;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-left: 70vh;
+}
+
+.menu {
     display: inline-block;
+    /* margin-left: 75vh; */
 }
 
 .content {

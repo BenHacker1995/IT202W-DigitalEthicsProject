@@ -8,7 +8,7 @@ class NavBar extends Component {
 
 
     return (
-      <div className='content'>
+      <div className='menu'>
         <NavBarSection1 overview={() => this.props.history.push('/overview')}
             economic={() => this.props.history.push('/economic')}
             safety={() => this.props.history.push('/safety')}
