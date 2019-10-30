@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 class Economic extends Component{
     render() {
         return(
-            <div>
+            <div className='content'>
                 <Header history={this.props.history}/>
                 <h2>Overview of Economic Issues with the Singularity</h2>
                 <h2>The Fall of Capitalism?</h2>
