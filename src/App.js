@@ -10,6 +10,7 @@ import Home from '../src/Components/Home/Home';
 import Overview from '../src/Components/Overview/Overview';
 import Economic from '../src/Components/Economics/Economics';
 import Safety from '../src/Components/Safety/Safety';
+import Sources from '../src/Components/Sources/Sources';
 
 
 import './App.css';
@@ -38,6 +39,11 @@ const App = () => (
         <Route
           path="/safety"
           component={Safety}
+        />
+
+        <Route
+          path="/sources"
+          component={Sources}
         />
 
         {/* OTHERWISE (no path!) */}
