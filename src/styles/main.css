@@ -22,14 +22,15 @@ body {
 
 .instructions {
     background-color: #00acb0;
+    background-position-x: center;
     justify-content: center;
     align-items: center;
+    display: inline-block;
 }
 
 .content {
     color: #ece7e7;
     display: inline-block;
-    /* padding: center; */
 }
 
 form {
