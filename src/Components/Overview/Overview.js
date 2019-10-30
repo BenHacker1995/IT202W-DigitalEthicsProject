@@ -8,6 +8,9 @@ class Overview extends Component{
         return (
             <div>
                 <Header history={this.props.history}/>
+                <h2>What is the Technolocal Singularity?</h2>
+                <h2>When is this Supposed to Happen?</h2>
+                <h2>Other Paths to the Technological Singularity</h2>
             </div>
         )
     }
