@@ -14,6 +14,7 @@ import Sources from '../src/Components/Sources/Sources';
 
 
 import './App.css';
+import '../src/styles/main.css';
 
 const App = () => (
   <div className="bg">

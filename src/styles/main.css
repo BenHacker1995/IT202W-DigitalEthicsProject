@@ -5,13 +5,14 @@ body {
 }
 
 .bg { 
-    background-image: url("dark_souls_remastered_crop.jpg");
+    background-image: url("artificial-intelligence-singularity.jpg");
 
     height: 100vh; 
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-origin: content-box;
 }
 
 .instructions h1 {
