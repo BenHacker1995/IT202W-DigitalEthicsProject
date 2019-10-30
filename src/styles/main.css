@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 70vh;
+    /* margin-left: 20vh; */
 }
 
 .menu {
@@ -35,7 +35,8 @@ body {
 
 .content {
     color: #ece7e7;
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
 }
 
 form {

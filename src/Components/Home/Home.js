@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 class Home extends Component{
     render() {
         return (
-            <div>
+            <div className='content'>
                 <Header history={this.props.history}/>
             </div>
         )
