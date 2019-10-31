@@ -55,10 +55,6 @@ class Flashcard extends Component {
         this.setState(state => ({ expanded: !state.expanded }));
     };
 
-    cardTop = () => {
-        let cardTop = this.props.cardTop;
-    }
-
   render() {
     const { classes } = this.props;
     return (
