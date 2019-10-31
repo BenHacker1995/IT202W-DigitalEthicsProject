@@ -1,4 +1,7 @@
-class Card extends React.Component {
+import React, {Component} from 'react';
+
+
+class Card extends Component {
   
     constructor() {
       super();
@@ -56,3 +59,5 @@ class Card extends React.Component {
       );
     }
   }
+
+export default Card;

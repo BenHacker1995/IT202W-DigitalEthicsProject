@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Card from '../Card/Card';
 
 
-class CardContainer extends React.Component {
+class CardContainer extends Component {
     constructor() {
       super();
       this.state = {
@@ -101,3 +101,5 @@ class CardContainer extends React.Component {
     }
   }
   
+
+export default CardContainer;
