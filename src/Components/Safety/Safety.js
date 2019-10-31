@@ -2,18 +2,57 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../Header/Header';
-// import CardContainer from '../CardContainer/CardContainer';
-import Card from '../Card/Card';
+import Flashcard from '../Card/Flashcard';
+
+import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Collapse from '@material-ui/core/Collapse';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+// const useStyles = makeStyles(theme => ({
+//   card: {
+//     maxWidth: 345,
+//   },
+//   media: {
+//     height: 0,
+//     paddingTop: '56.25%', // 16:9
+//   },
+//   expand: {
+//     transform: 'rotate(0deg)',
+//     marginLeft: 'auto',
+//     transition: theme.transitions.create('transform', {
+//       duration: theme.transitions.duration.shortest,
+//     }),
+//   },
+//   expandOpen: {
+//     transform: 'rotate(180deg)',
+//   },
+// }));
+
+// let RecipeReviewCard = () => {
+// }
 
 class Safety extends Component{
+    // classes = useStyles();
+    // const [expanded, setExpanded] = React.useState(false);
+  
+    // handleExpandClick = () => {
+    //   setExpanded(!expanded);
+    // };
+    
     render() {
         return (
             <div className='content'>
                 <Header history={this.props.history}/>
-                {/* <CardContainer word={() => 'Capture New Opportunities Through Aggressive Investment'}
-                desc={() => 'Several nations have created competitive strategies to promote research and development investments as automation technologies become more mature.'}
-                /> */}
-                <Card/>
+                <Flashcard title={() => 'Capture New Opportunities Through Aggressive Investment'}
+                desc={() => 'Several nations have created competitive strategies to promote research and development investments as automation technologies become more mature.'}/>
                 {/* <h2>Capture New Opportunities Through Aggressive Investment</h2>
                 <h4>Several nations have created competitive strategies to promote 
                     research and development investments as automation technologies become more mature. </h4> */}

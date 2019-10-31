@@ -27,9 +27,8 @@ body {
     align-items: center;
     text-align: center;
 }
-
-.menu {
-    /* display: inline-block; */
+.card {
+  maxWidth: 345;
 }
 
 .content {
