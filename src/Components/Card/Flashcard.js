@@ -54,6 +54,11 @@ class Flashcard extends Component {
     handleExpandClick = () => {
         this.setState(state => ({ expanded: !state.expanded }));
     };
+
+    cardTop = () => {
+        let cardTop = this.props.cardTop;
+    }
+
   render() {
     const { classes } = this.props;
     return (
@@ -61,13 +66,20 @@ class Flashcard extends Component {
                 <Card className={classes.card}>
                 <CardHeader
                     className={classes.header}
-                />
+                    id='card-content'
+                >
+                </CardHeader>
                 <CardContent>
                 <Typography component="p">
-                    {/* {post.title} */}
                     </Typography>
                     <hr/>
                 </CardContent>
+                <IconButton
+                    onClick={this.handleExpandClick}
+                    aria-label="show more"
+                    >
+                    <ExpandMoreIcon />
+                </IconButton>
                 <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
                     <CardContent>
                     <Typography paragraph variant="body2">

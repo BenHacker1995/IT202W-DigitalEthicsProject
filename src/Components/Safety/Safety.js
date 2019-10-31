@@ -51,7 +51,7 @@ class Safety extends Component{
         return (
             <div className='content'>
                 <Header history={this.props.history}/>
-                <Flashcard title={() => 'Capture New Opportunities Through Aggressive Investment'}
+                <Flashcard cardTop={() => 'Capture New Opportunities Through Aggressive Investment'}
                 desc={() => 'Several nations have created competitive strategies to promote research and development investments as automation technologies become more mature.'}/>
                 {/* <h2>Capture New Opportunities Through Aggressive Investment</h2>
                 <h4>Several nations have created competitive strategies to promote 

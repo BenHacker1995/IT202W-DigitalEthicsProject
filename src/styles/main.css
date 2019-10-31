@@ -27,8 +27,8 @@ body {
     align-items: center;
     text-align: center;
 }
-.card {
-  maxWidth: 345;
+#card-content {
+  color: black;
 }
 
 .content {
