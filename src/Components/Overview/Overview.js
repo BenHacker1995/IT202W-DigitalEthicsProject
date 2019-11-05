@@ -63,13 +63,8 @@ class Overview extends Component{
         const { classes } = this.props;
         return (
             <div className='content'>
-                {/* <NewCard
-                    key = {post.post_id}
-                    post= {post}
-                    user= {this.props.user}
-                    /> */}
                 <div>
-                <Header history={this.props.history}/>
+                    <Header history={this.props.history}/>
                 </div>
                 <Flashcard
                     title = {'Information Evolution'}
