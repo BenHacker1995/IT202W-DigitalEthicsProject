@@ -11,9 +11,9 @@ import MenuList from '@material-ui/core/MenuList';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
-  root: {
-    display: 'inline-block',
-  },
+  // root: {
+  //   display: 'inline-block',
+  // },
   paper: {
     marginRight: theme.spacing.unit * 2,
   },
@@ -53,7 +53,8 @@ class NavBarSection1 extends Component {
     const { open } = this.state;
 
     return (
-      <div className={classes.root}>
+      // <div className={classes.root}>
+      <div>
           <Button
             onClick={this.home}
           >

@@ -61,7 +61,7 @@ class Flashcard extends Component {
   render() {
     const { classes } = this.props;
     return (
-        <div>
+        <div className='flashcard'>
                 <Card className={classes.card}>
                 <CardHeader
                     className={classes.header}
@@ -85,7 +85,6 @@ class Flashcard extends Component {
                     <Typography component="p">
                         </Typography>
                         <Typography component="p">
-                            {/* {this.contentTrimmer(post.content)} */}
                             {this.content}
                         </Typography>
                     </CardContent>

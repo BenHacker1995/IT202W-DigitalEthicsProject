@@ -34,6 +34,13 @@ body {
 .content {
     color: #ece7e8;
     text-align: center;
+    /* display:inline-block; */
+}
+.flashcard {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: inline-block;
 }
 
 form {
