@@ -15,6 +15,7 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Flashcard from '../Card/Flashcard';
 
 const styles = theme => ({
     card: {
@@ -62,7 +63,16 @@ class Overview extends Component{
         const { classes } = this.props;
         return (
             <div className='content'>
+                {/* <NewCard
+                    key = {post.post_id}
+                    post= {post}
+                    user= {this.props.user}
+                    /> */}
                 <Header history={this.props.history}/>
+                <Flashcard
+                    title = {'Information Evolution'}
+                    content = {'The success of the quickly progressing information age is based on data, and data and information are all around us. When we assess the information and intelligence development in machines, we understand that it has inaccurate human life in important originations in how we make digital data and information, how we capture and gather the digital data, how we stock it, how we save and matching the information thereby clouding the limits of languages, time zones, politics, philosophy, race, religion and culture.'}
+                />
                 <Card className={classes.card} display='inline'>
                     <CardContent>
                         <Typography>

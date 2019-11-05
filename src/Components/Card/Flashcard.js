@@ -55,6 +55,9 @@ class Flashcard extends Component {
         this.setState(state => ({ expanded: !state.expanded }));
     };
 
+    title = this.props.title;
+    content = this.props.content;
+
   render() {
     const { classes } = this.props;
     return (
@@ -65,6 +68,7 @@ class Flashcard extends Component {
                     id='card-content'
                 >
                 </CardHeader>
+                {this.title}
                 <CardContent>
                 <Typography component="p">
                     </Typography>
@@ -78,9 +82,12 @@ class Flashcard extends Component {
                 </IconButton>
                 <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
                     <CardContent>
-                    <Typography paragraph variant="body2">
-                        This is the extended copy for the post. Bacon ipsum dolor amet beef ribs ham hock jerky pig hamburger, alcatra doner. Ham hock corned beef swine, kevin pork loin chicken pork chop. Pork fatback buffalo, doner cupim meatloaf alcatra. Shank bacon drumstick, boudin brisket hamburger cupim ground round ribeye pork loin. Prosciutto ribeye corned beef hamburger pork pork belly burgdoggen ham hock salami pastrami strip steak. Alcatra shoulder porchetta capicola corned beef, short loin t-bone short ribs. Picanha sirloin tenderloin biltong porchetta ribeye.
-                    </Typography>
+                    <Typography component="p">
+                        </Typography>
+                        <Typography component="p">
+                            {/* {this.contentTrimmer(post.content)} */}
+                            {this.content}
+                        </Typography>
                     </CardContent>
                 </Collapse>
                 </Card>
