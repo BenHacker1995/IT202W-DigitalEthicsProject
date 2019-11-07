@@ -5,12 +5,13 @@ body {
 }
 
 .bg { 
-    background-image: url("artificial-intelligence-singularity.jpg");
+    /* background-image: url("artificial-intelligence-singularity.jpg"); */
+    background-image: url("812.svg");
 
-    height: 100vh; 
+    /* height: 100vh;  */
 
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-origin: content-box;
 }
