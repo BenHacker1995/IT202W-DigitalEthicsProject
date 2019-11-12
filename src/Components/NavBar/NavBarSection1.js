@@ -51,11 +51,11 @@ class NavBarSection1 extends Component {
 
     return (
       <div>
-          <Button
+          {/* <Button
             onClick={this.home}
           >
             Home
-          </Button>
+          </Button> */}
           <Button
             onClick={this.overview}
           >

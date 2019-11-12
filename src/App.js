@@ -20,7 +20,7 @@ const App = () => (
   <div className="bg">
     <Router>
       <Switch>
-        <Redirect exact from="/" to="/home" />
+        <Redirect exact from="/" to="/overview" />
 
         <Route
           path="/home"
